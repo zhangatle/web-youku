@@ -32,6 +32,7 @@ func (c *MainController) Get() {
 	//获取动漫排行榜
 	comicTop := models.GetChannelTop(1)
 	c.Data["comicTop"] = comicTop
+	fmt.Println(comicTop)
 	//获取少女排行榜
 	girlTop := models.GetTypeTop(1)
 	c.Data["girlTop"] = girlTop
